@@ -23,7 +23,7 @@ module.exports = app => {
     const cachedBlogs = await client.get(req.user.id)
     if (cachedBlogs) {
       console.log('from cache')
-      return res.send(cachedBlogs)
+      return res.send(JSON.parse(cachedBlogs))
     }
 
     const blogs = await Blog.find({ _user: req.user.id })
