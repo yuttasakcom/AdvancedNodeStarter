@@ -4,4 +4,4 @@ module.exports = {
   googleClientSecret: 'KnH-rZC23z4fr2CN4ISK4srN',
   mongoURI: 'mongodb://readonly:password@ds063124.mlab.com:63124/blog_everyone',
   cookieKey: '123123123'
-};
+}
